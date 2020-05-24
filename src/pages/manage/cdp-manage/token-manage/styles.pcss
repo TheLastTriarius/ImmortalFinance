@@ -1,0 +1,119 @@
+.root {
+  background-color: var(--dark-background);
+  padding: 0.875rem 1.0625rem 1.0625rem 1.0625rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-bottom: 1.25rem;
+}
+
+.sectionHeader {
+  display: flex;
+  padding-bottom: 0.9375rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.sectionName {
+  font-size: 0.5313rem;
+  letter-spacing: 0.17px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 0.375rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.sectionValue {
+  font-weight: 600;
+  font-size: 0.625rem;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.75rem;
+  flex-direction: column;
+}
+
+.rebalanceRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 0.8125rem;
+  margin-bottom: 0.5rem;
+}
+
+.debtRoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.8125rem;
+}
+
+.rebalanceText {
+  font-size: 0.75rem;
+  letter-spacing: 0.24px;
+  color: #adadad;
+  margin-bottom: 0.8125rem;
+}
+
+.collateralTabsRoot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.6875rem;
+}
+
+.tabButton {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  &::last-child {
+    margin-left: 0.9375rem;
+  }
+
+  &[data-active='true'] {
+    color: #27c4d0;
+  }
+
+  &[data-active='false'] {
+    color: var(--white);
+  }
+}
+
+.rebalanceInputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2.6875rem;
+}
+
+.maxRebalanceWrapper {
+  margin-bottom: 0.625rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.value {
+  color: #07b1d6;
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-left: 5px;
+}

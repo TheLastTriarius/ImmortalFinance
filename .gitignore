@@ -1,0 +1,9 @@
+node_modules
+dist
+.idea
+.firebase
+
+.DS_Store
+.env.development
+.env.production
+.env.test

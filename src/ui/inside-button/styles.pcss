@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+  border: none;
+  height: 28px;
+  overflow: hidden;
+  border-radius: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5625rem 1.3125rem;
+  background-color: var(--yellow);
+  z-index: 0;
+  cursor: pointer;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.75);
+  outline: none;
+
+  &[data-active='true'] {
+    background-color: #f64000;
+  }
+
+  span {
+    text-align: center;
+    font-weight: 600;
+    color: #2a2a2a;
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    line-height: 1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--gradient-overlay);
+    background-blend-mode: overlay;
+    z-index: 1;
+  }
+
+  &:disabled {
+    background-color: #777777;
+  }
+}
+
+.loaderPosition {
+  position: absolute;
+  left: -2.2rem;
+  top: calc((100% - 1.75rem) / 2);
+  width: 1.75rem;
+  z-index: 40;
+}

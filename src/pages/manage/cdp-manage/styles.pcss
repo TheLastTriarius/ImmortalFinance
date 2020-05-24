@@ -1,0 +1,36 @@
+.root {
+  padding: 1.25rem 1.9375rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  max-height: calc(100vh - 161px);
+}
+
+.progressWrapper {
+  border-radius: 4px;
+  padding: 0.3125rem;
+  background-color: var(--dark-background);
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.progressDetails {
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.625rem;
+  bottom: 0.3125rem;
+  left: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.progressPercents {
+  font-size: 0.84375rem;
+  color: var(--white);
+  letter-spacing: 0.27px;
+  font-weight: 600;
+}

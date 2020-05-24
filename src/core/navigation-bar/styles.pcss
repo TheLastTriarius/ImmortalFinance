@@ -1,0 +1,37 @@
+.root {
+  padding: 2.5rem 0.62rem 1.87rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationLink {
+  font-family: var(--heading-font);
+  font-size: 1.81rem;
+  line-height: 2.2rem;
+  letter-spacing: 3.5px;
+  color: var(--white);
+  transition: color 0.6s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.activeLink {
+  color: var(--yellow);
+}
+
+.decorationDivider {
+  height: 2.1rem;
+  width: 0.25rem;
+  background-color: var(--light-blue);
+  margin: 0 1.25rem;
+  transition: transform 0.4s;
+
+  &[data-position='right'] {
+    transform: skewX(-18deg);
+  }
+
+  &[data-position='left'] {
+    transform: skewX(18deg);
+  }
+}

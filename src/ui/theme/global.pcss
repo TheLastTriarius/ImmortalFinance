@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'),
+    url('./fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), url('./fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'),
+    url('./fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'),
+    url('./fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), url('./fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'HEADING PRO';
+  src: local('HEADING PRO'),
+    url('./fonts/HEADINGPRO-BOLD.otf') format('truetype');
+  font-weight: 700;
+}
+
+:root {
+  --dark-blue: #1a88a0;
+  --light-blue: #32d1d9;
+  --yellow: #cee83d;
+  --white: #ffffff;
+  --red: #f64000;
+  --dark: #232323;
+  --black: #000000;
+  --light-grey: #7b7b7b;
+  --deep-grey: #414141;
+  --grey: #4e4e4e;
+  --disable-color: #686868;
+  --dark-background: #191919;
+  --gradient-overlay: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+
+  --heading-font: 'HEADING PRO', sans-serif;
+
+  --default-font: 'Open Sans', sans-serif;
+  --root-font-size: 16px;
+
+  --default-border-radius: 1.34rem;
+
+  --horizontal-shadow: 0px 15px 57px -2px rgba(0, 0, 0, 0.4);
+  --vertical-shadow: 0px 0px 81px -2px rgba(0, 0, 0, 0.4);
+  --element-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
+
+  --laptop: 80rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--default-font), sans-serif;
+  font-size: var(--root-font-size);
+  background-color: var(--dark);
+}
+
+[id='root'] {
+  width: 100%;
+  height: 100%;
+}

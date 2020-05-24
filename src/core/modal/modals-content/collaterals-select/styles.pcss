@@ -1,0 +1,63 @@
+.root {
+  padding: 1.25rem 1.9375rem;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelWrapper {
+  margin-bottom: 0.625rem;
+}
+
+.listWrapper {
+  background-color: var(--dark-background);
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.itemWrapper {
+  width: 100%;
+  border-top: 1px solid var(--grey);
+  padding: 0.3125rem 1.25rem;
+  background-color: #232323;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:last-child {
+    border-bottom: 1px solid var(--grey);
+  }
+}
+
+.itemName {
+  font-family: 'HEADING PRO', sans-serif;
+  font-size: 1.8125rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &[data-variant='disabled'] {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &[data-variant='enabled'] {
+    color: #27c4d0;
+  }
+
+  &[data-variant='pending'] {
+    color: var(--white);
+  }
+}
+
+.buttonWrapper {
+  padding: 1.25rem 0 0.625rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

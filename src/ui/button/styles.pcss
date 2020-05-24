@@ -1,0 +1,38 @@
+.button {
+  position: relative;
+  border: none;
+  overflow: hidden;
+  height: 2.75rem;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: var(--yellow);
+  z-index: 0;
+  cursor: pointer;
+  box-shadow: var(--element-shadow);
+  outline: none;
+
+  span {
+    text-align: center;
+    font-weight: 600;
+    color: var(--dark);
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    margin-bottom: 0.125rem;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--gradient-overlay);
+    background-blend-mode: overlay;
+    z-index: 1;
+  }
+}

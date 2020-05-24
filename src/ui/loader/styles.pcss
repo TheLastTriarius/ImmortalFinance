@@ -1,0 +1,45 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.root {
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &[data-size='large'] {
+    width: 100px;
+    height: 100px;
+  }
+
+  &[data-size='small'] {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+.arrowsRoot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: spin 4s infinite linear;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo {
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

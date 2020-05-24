@@ -1,0 +1,40 @@
+.submitButton {
+  position: relative;
+  border: none;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 5.12rem;
+  background-color: var(--yellow);
+  z-index: 0;
+  cursor: pointer;
+  box-shadow: var(--element-shadow);
+
+  &:disabled {
+    background-color: var(--disable-color);
+  }
+
+  span {
+    text-align: center;
+    line-height: 1rem;
+    font-weight: 700;
+    color: var(--dark);
+    z-index: 2;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--gradient-overlay);
+    background-blend-mode: overlay;
+    z-index: 1;
+  }
+}

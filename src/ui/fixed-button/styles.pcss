@@ -1,0 +1,68 @@
+.button {
+  position: relative;
+  border: none;
+  min-width: 13.3125rem;
+  overflow: hidden;
+  height: 44px;
+  border-radius: 1.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 0;
+  cursor: pointer;
+
+  &[data-variant='fill'] {
+    &:disabled {
+      background-color: #777777;
+    }
+
+    background-color: var(--yellow);
+    box-shadow: var(--element-shadow);
+
+    span {
+      text-align: center;
+      font-weight: 600;
+      color: var(--dark);
+      z-index: 2;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      margin-bottom: 0.125rem;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: var(--gradient-overlay);
+      background-blend-mode: overlay;
+      z-index: 1;
+    }
+  }
+
+  &[data-variant='ghost'] {
+    border: 1px solid var(--grey);
+    background-color: transparent;
+
+    span {
+      text-align: center;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.5);
+      z-index: 2;
+      text-transform: uppercase;
+      font-size: 1.15rem;
+      margin-bottom: 0.125rem;
+    }
+  }
+}
+
+.loaderPosition {
+  position: absolute;
+  left: -2.2rem;
+  top: calc((100% - 1.75rem) / 2);
+  width: 1.75rem;
+  z-index: 40;
+}

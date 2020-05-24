@@ -1,0 +1,87 @@
+.root {
+  width: 100%;
+  height: 2.62rem;
+  border-radius: var(--default-border-radius);
+  box-shadow: var(--element-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  flex-grow: 1;
+  background-color: var(--dark);
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  user-select: none;
+  outline: none;
+  padding: 0 1.875rem;
+  overflow: hidden;
+  z-index: 0;
+
+  border: 1px solid var(--grey);
+
+  &:first-child {
+    border-radius: var(--default-border-radius) 0 0 var(--default-border-radius);
+    margin-right: -2px;
+  }
+
+  &:last-child {
+    border-radius: 0 var(--default-border-radius) var(--default-border-radius) 0;
+    margin-left: -2px;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.15rem;
+    z-index: 2;
+  }
+
+  &[data-active='true'] {
+    span {
+      color: var(--white);
+    }
+    background-color: var(--light-blue);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: var(--gradient-overlay);
+      background-blend-mode: overlay;
+      z-index: 1;
+    }
+  }
+
+  &[data-active='false'] {
+    span {
+      color: var(--yellow);
+    }
+  }
+
+  &:hover {
+    border-color: var(--yellow);
+    z-index: 10;
+
+    & + div {
+      background-color: var(--yellow);
+    }
+  }
+}
+
+.divider {
+  height: 100%;
+  width: 1px;
+  z-index: 2;
+  background-color: var(--grey);
+
+  button:hover + & {
+    background-color: var(--yellow);
+  }
+}
