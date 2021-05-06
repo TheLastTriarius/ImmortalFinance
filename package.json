@@ -84,7 +84,7 @@
     "effector": "^20.14.0",
     "effector-debounce": "^1.1.0",
     "effector-react": "^20.7.1",
-    "highcharts": "^8.0.4",
+    "highcharts": "^9.0.0",
     "highcharts-react-official": "^3.0.0",
     "history": "^4.10.1",
     "mathjs": "^7.0.0",
